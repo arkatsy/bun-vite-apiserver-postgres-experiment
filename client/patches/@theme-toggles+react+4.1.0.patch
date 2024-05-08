@@ -1,0 +1,12 @@
+diff --git a/node_modules/@theme-toggles/react/dist/index.d.ts b/node_modules/@theme-toggles/react/dist/index.d.ts
+index 7b31c5f..52b77a7 100644
+--- a/node_modules/@theme-toggles/react/dist/index.d.ts
++++ b/node_modules/@theme-toggles/react/dist/index.d.ts
+@@ -8,4 +8,7 @@ export interface ToggleProps extends Omit<DetailedHTMLProps<React.ButtonHTMLAttr
+     forceMotion?: boolean;
+     idPrefix?: string;
+     onToggle?: (toggled: boolean) => void;
++    placeholder?: string | undefined;
++    onPointerEnterCapture?: React.PointerEventHandler<HTMLButtonElement> | undefined;
++    onPointerLeaveCapture?: React.PointerEventHandler<HTMLButtonElement> | undefined;
+ }
