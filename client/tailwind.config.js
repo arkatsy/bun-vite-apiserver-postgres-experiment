@@ -14,6 +14,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Nunito Variable", "system-ui"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
