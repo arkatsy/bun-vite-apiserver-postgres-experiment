@@ -6,12 +6,16 @@
     "serve:dev": "bun --watch ./index.ts",
     "serve:prod": "bun ./index.ts",
     "docker:prod-up": "docker-compose -f ./docker-compose.prod.yml up",
-    "docker:prod-down": "docker-compose -f ./docker-compose.prod.yml down"
+    "docker:prod-down": "docker-compose -f ./docker-compose.prod.yml down",
+    "docker:build": "docker build -f ./Dockerfile.prod -t tasks-server-api ."
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "postgres": "^3.4.4"
   }
 }
