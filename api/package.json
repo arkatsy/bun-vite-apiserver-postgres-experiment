@@ -3,7 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "serve": "bun --watch ./index.ts"
+    "serve:dev": "bun --watch ./index.ts",
+    "serve:prod": "bun ./index.ts",
+    "docker:prod-up": "docker-compose -f ./docker-compose.prod.yml up",
+    "docker:prod-down": "docker-compose -f ./docker-compose.prod.yml down"
   },
   "devDependencies": {
     "@types/bun": "latest"
